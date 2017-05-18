@@ -2,5 +2,8 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="complex" nsURI="https://raw.githubusercontent.com/rousseaux/testmodels/master/complex"
     nsPrefix="complex">
-  <eClassifiers xsi:type="ecore:EClass" name="SomeKeyboard" eSuperTypes="https://raw.githubusercontent.com/rousseaux/testmodels/master/hardware/devices.ecore#//Keyboard"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SomeKeyboard" eSuperTypes="https://raw.githubusercontent.com/rousseaux/testmodels/master/hardware/devices.ecore#//Keyboard #//subpack/NumPad"/>
+  <eSubpackages name="subpack" nsURI="http://subpack/1.0" nsPrefix="subpack">
+    <eClassifiers xsi:type="ecore:EClass" name="NumPad"/>
+  </eSubpackages>
 </ecore:EPackage>
